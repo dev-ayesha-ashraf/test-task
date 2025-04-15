@@ -1,0 +1,322 @@
+/* ========== Base Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background: #fff;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  /* ========== Header ========== */
+  header {
+    padding: 20px 3.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 23px;
+    font-weight: 400;
+    color: #042434;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #796fa3;
+    font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  /* Buttons */
+  .btn-contact,
+  .active {
+    background: #042434;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .active {
+    border: 2px solid #000;
+    color: black;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: white !important;
+  }
+  
+  /* ========== Hamburger Menu ========== */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 100;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #042434;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+  
+  /* ========== Hero Section ========== */
+  .main-section {
+    background: url('./images/Home bg.png') no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+   
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .section h1 {
+    font-size: 36px;
+    font-weight: 650;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding: 45px 0;
+
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .breadcrumb {
+    background: #f91138;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    margin-top: -65px;
+    letter-spacing: 0.8px;
+  }
+  
+  /* Hero Content */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    margin-top: 40px;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    max-width: 630px;
+    text-align: left;
+  }
+  
+  .hero-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #042434;
+  }
+  
+  .hero-text h2 span {
+    color: #f91138;
+  }
+  
+  .hero-text p {
+    margin: 15px 0 5px;
+    color: #042434;
+    padding-top: 15px;
+  }
+  
+  .today {
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  /* ========== Highlight Section ========== */
+  .highlight-section {
+    background: #f91138;
+    color: #fff;
+    padding: 40px 5%;
+    border-radius: 10px;
+    margin: 30px auto;
+    text-align: center;
+    height: 50vh;
+  }
+  
+  .highlight-section h3 {
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+  }
+  
+  /* ========== Cards ========== */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 5%;
+    margin-top: -155px;
+    position: relative;
+    padding-bottom: 40px !important;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+    flex: 1 1 220px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .card img {
+    margin: 15px 0;
+  }
+  
+  .image-box {
+    height: auto;
+  }
+  
+  /* Specific image sizing */
+  .card .image-1 {
+    width: 79%;
+    padding-left: 20px !important;
+  }
+  
+  .card .image-2 {
+    width: 45%;
+  }
+  
+  .card .image-3 {
+    width: 44%;
+  }
+  
+  .card .image-4 {
+    width: 85%;
+  }
+  
+  .cards p {
+    color: #042434;
+    padding: 0 21px;
+  }
+  
+  .card-4 p {
+    padding: 0 15px;
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 1160px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+  
+    .hero-text h2 {
+      font-size: 28px;
+    }
+  
+    .highlight-section {
+      margin: 20px auto;
+      padding: 30px 5%;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      z-index: 99;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  
+    .header-buttons {
+      display: none;
+    }
+  }
+  
